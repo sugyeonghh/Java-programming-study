@@ -33,7 +33,6 @@ public class AddTwo {
     }
 
     public static void main(String[] args) {
-        // 두 개 뽑아서 더하기
         AddTwo addTwo = new AddTwo();
         int[][] input3 = {{2,1,3,4,1}, {5,0,2,7}};
         int[][] result3 = {{2,3,4,5,6,7}, {2,5,7,9,12}};
