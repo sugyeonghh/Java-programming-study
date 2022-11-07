@@ -17,6 +17,7 @@ public class GetMiddleLetter {
         return answer;
     }
 
+    // main for 가운데 글자 가져오기
     public static void main(String[] args) {
         GetMiddleLetter getMiddleLetter = new GetMiddleLetter();
         String[] input2 = {"abcde", "qwer"};
