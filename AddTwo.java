@@ -31,7 +31,7 @@ public class AddTwo {
         Arrays.sort(answer);
         return answer;
     }
-
+    // main for 두 개 뽑아서 더하기
     public static void main(String[] args) {
         AddTwo addTwo = new AddTwo();
         int[][] input3 = {{2,1,3,4,1}, {5,0,2,7}};
