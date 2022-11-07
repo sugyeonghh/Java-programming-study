@@ -5,6 +5,7 @@ public class EvenAndOdd {
         return (num%2 == 0 ? "Even" : "Odd");
     }
 
+    // main for 짝수와 홀수
     public static void main(String[] args) {
         EvenAndOdd evenAndOdd = new EvenAndOdd();
         int[] input1 = {3, 4};
