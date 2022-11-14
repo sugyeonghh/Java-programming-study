@@ -13,15 +13,15 @@ public class ControlZ {
             items.remove(items.indexOf(z) - 1);
             items.remove(items.indexOf(z));
         }
-        for (int i = items.size() - 1; i >= 0; i--)
-            sum += Integer.parseInt(items.get(i));
+        for (String item : items)
+            sum += Integer.parseInt(item);
         return sum;
     }
 
     public static void main(String[] args) {
         ControlZ controlZ = new ControlZ();
-        System.out.println(controlZ.solution("1 2 Z 3"));
-        System.out.println(controlZ.solution("10 20 30 40"));
-        System.out.println(controlZ.solution("10 Z 20 Z 1"));
+        System.out.println(controlZ.solution("1 2 Z 3"));       // 4
+        System.out.println(controlZ.solution("10 20 30 40"));   // 100
+        System.out.println(controlZ.solution("10 Z 20 Z 1"));   // 1
     }
 }
