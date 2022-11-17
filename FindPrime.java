@@ -19,7 +19,7 @@ public class FindPrime {
 
     public static void main(String[] args) {
         FindPrime findPrime = new FindPrime();
-        System.out.println(findPrime.solution(10));
-        System.out.println(findPrime.solution(5));
+        System.out.println(findPrime.solution(10)); // 4
+        System.out.println(findPrime.solution(5));  // 3
     }
 }
