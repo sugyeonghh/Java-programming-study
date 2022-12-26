@@ -9,9 +9,9 @@ public class GetReport {
 		HashMap<String, HashSet<String>> reporter = new HashMap<>();
 		HashMap<String, HashSet<String>> reported = new HashMap<>();
 
-		for (int i = 0; i < id_list.length; i++) {
-			reporter.put(id_list[i], new HashSet<>());
-			reported.put(id_list[i], new HashSet<>());
+		for (String s : id_list) {
+			reporter.put(s, new HashSet<>());
+			reported.put(s, new HashSet<>());
 		}
 
 		for (String r : report) {
