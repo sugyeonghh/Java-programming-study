@@ -1,14 +1,19 @@
+// 프로그래머스 - 위장
+
 import java.util.HashMap;
 
 public class Camouflage {
 	public int solution(String[][] clothes) {
 		HashMap<String, Integer> wear = new HashMap<>();
-		int result = 0;
 		for (String[] cloth : clothes) {
 			wear.put(cloth[1], wear.getOrDefault(cloth[1], 0) + 1);
-			result += 1;
 		}
 
+		int result = 1;
+		for (String key : wear.keySet()) {
+			result *= (wear.get(key) + 1);
+		}
+		return result - 1;
 	}
 
 	public static void main(String[] args) {
