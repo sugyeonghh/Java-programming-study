@@ -6,7 +6,6 @@ public class Printer {
 	public int solution(int[] priorities, int location) {
 		PriorityQueue<Integer> queue = new PriorityQueue<>(Collections.reverseOrder());
 		int result = 0;
-
 		for (int priority : priorities) {
 			queue.add(priority);
 		}
@@ -26,7 +25,7 @@ public class Printer {
 
 	public static void main(String[] args) {
 		Printer printer = new Printer();
-		System.out.println(printer.solution(new int[]{2, 1, 3, 2}, 2));
+		System.out.println(printer.solution(new int[]{2, 1, 3, 2}, 0));
 		System.out.println(printer.solution(new int[]{1, 1, 9, 1, 1, 1}, 0));
 	}
 }
