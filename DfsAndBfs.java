@@ -56,12 +56,3 @@ public class DfsAndBfs {
         bfs(graph, visited, vertex, start);
     }
 }
-/*
-  0 1 2 3 4
-0 0 0 0 0 0
-1 0 0 1 1 1
-2 0 1 0 0 1
-3 0 1 0 0 1
-4 0 1 1 1 0
-
-* */
