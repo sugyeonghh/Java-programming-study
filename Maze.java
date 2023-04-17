@@ -38,7 +38,6 @@ public class Maze {
 				if (nx >= 0 && nx < row && ny >= 0 && ny < col && graph[ny][nx] == 1) {
 					queue.add(new int[]{ny, nx});
 					graph[ny][nx] = graph[y][x] + 1;
-					if (ny == col - 1 && nx == row - 1) break;
 				}
 			}
 		}
